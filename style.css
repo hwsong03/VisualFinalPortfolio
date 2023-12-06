@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Acumin+Variable+Concept:wght@400;700&display=swap');
+
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Acumin Variable Concept', sans-serif;
+    color: #000; 
+    background-color: #CCE2FB; 
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #CCE2FB; 
+    text-align: center;
+    padding: 1em 0;
+    position: relative; 
+}
+
+#header-symbol {
+    display: block;
+    margin: 0 auto;
+    width: 60px; 
+    height: auto; 
+    padding-top: 10px; 
+}
+
+nav {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #000; 
+    text-decoration: none;
+    font-family: 'Playfair Display', serif; 
+}
+
+nav ul li a:hover {
+    color: #476591; 
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: #CCE2FB; 
+}
+
+.project {
+    width: 100%;
+    overflow: hidden; 
+    aspect-ratio: 1 / 1; 
+    margin-bottom: 30px; 
+}
+
+.project img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: center; 
+    transition: all 0.3s ease;
+    border: none; 
+}
+
+.project:hover img {
+    object-fit: contain; 
+}
+
+.background-text {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1; 
+    opacity: 0.3; 
+    background-color: #CCE2FB; 
+}
+
+/* Style the background titles */
+.back-title {
+    font-size: 11rem; 
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase; 
+    font-style: italic; 
+    position: fixed;
+    z-index: -1;
+    top: 15%; 
+    left: 10px; 
+}
+
+.back-title-1 {
+    color: #1A496E; 
+}
+
+.back-title-2 {
+    color: #0D344D; 
+    top: 35%; 
+}
+
+.back-title-3 {
+    color: #06233D; 
+    top: 55%; 
+}
+
+.contact-page {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 100px); 
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-item img {
+    width: 40px; 
+    height: auto; 
+    margin-right: 10px; 
+    filter: invert(100%);
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: #476591;
+    font-family: 'Playfair Display', serif;
+    display: inline-flex;
+    align-items: center; 
+    filter: invert(100%);
+}
+
+
+.main-container {
+    min-height: calc(100vh - 100px); 
+    position: relative;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+footer {
+    background-color: #CCE2FB;
+    color: #000;
+    text-align: center;
+    padding: 1em 0;
+    clear: both; 
+}
+
+
+.info-content {
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+}
+
+.center-image {
+    text-align: center;
+}
+
+.face-image {
+    width: 200px; 
+    height: auto;
+    margin: 0 auto; 
+}
+
+.quote-text {
+    font-size: 7rem; 
+    font-weight: bold; 
+    font-family: 'Playfair Display', serif; 
+}
+
+.info-paragraph {
+    font-size: 1.2rem; 
+    margin-bottom: 20px; 
+    line-height: 1.5; 
+}
+
+.info-heading {
+    font-size: 2rem; 
+    font-weight: bold; 
+}
+
+/* Style for the entire project page */
+.project-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 20px;
+}
+
+/* Style for the image collage on the left */
+.image-collage {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.image-collage img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+/* Style for the project details on the right */
+.project-details {
+    flex: 1;
+    padding: 20px;
+}
+
+.project-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.project-date {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.project-link a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.project-link a:hover {
+    text-decoration: underline;
+}
