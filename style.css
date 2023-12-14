@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Acumin+Variable+Concept:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 
 body, h1, h2, p {
     margin: 0;
     padding: 0;
+    font-family: 'Playfair Display', serif;
 }
 
 body {
-    font-family: 'Acumin Variable Concept', sans-serif;
     color: #000; 
     background-color: #CCE2FB; 
     margin: 0;
@@ -157,13 +157,38 @@ nav ul li a:hover {
 
 
 .main-container {
-    min-height: calc(100vh - 100px); 
+    min-height: calc(100vh - 100px);
     position: relative;
 }
 
 .main-content {
     padding: 20px;
 }
+
+.background-box-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust opacity here */
+    z-index: -1;
+    width: 60%; /* Adjust width as needed */
+    height: 100%; /* Adjust height as needed */
+    padding: 20px; /* Adjust padding to control the size of the background */
+}
+
+.background-box-contact {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust opacity here */
+    z-index: -1;
+    width: 20%; /* Adjust width as needed */
+    height: 40%; /* Adjust height as needed */
+    padding: 20px; /* Adjust padding to control the size of the background */
+}
+
 
 footer {
     background-color: #CCE2FB;
